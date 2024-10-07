@@ -5,9 +5,12 @@
 
 body{
     background-image: url(/images/image.png);
+    justify-content: center;
+    grid-gap: o.5rem;
+    grid-template-columns: 250px auto auto;
     
 }
-body::before {
+body::after {
     content: "";
     position: absolute;
     top: 0;
@@ -31,7 +34,32 @@ body::before {
     font-size: 400%;
 }
 
-.formulario{
-    background-color: #4C4C4C;
+header{
+    grid-area: header;
+    background-color: #FFFFFF;
 }
+
+nav ul{
+    list-style-type: none;
+    padding:0;
+   
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition: color o.3s ease;
+
+}
+
+nav ul li a:hover{
+    color:chartreuse
+}
+
 
